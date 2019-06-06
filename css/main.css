@@ -700,4 +700,7 @@ header img {
     .tips h5 {
         margin: .3em 0 -1.8em .7em;
     }
+    .tabbed label {
+        font-size: .9em;
+    }
 }
