@@ -159,7 +159,7 @@ footer p {
 }
 .ratings {
     margin-left: 2.9em;
-    margin-top: .4em;
+    margin-top: .5em;
 }
 .ratings:first-of-type {
     margin-left: 4em;
@@ -417,80 +417,19 @@ header img {
     margin-left: 2em;
     color: black;
 }
+.review {
+    height: auto;
+    background: #eee;
+    color: black;
+    padding-top: 1em;
+}
+.review p {
+    padding: 0 auto;
+    margin-left: 2em;
+    color: black;
+}
 .ig2 {
     height: 86%;
-}
-
-/* Carrausel */
-
-.scroll {
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-.example-one {
-    position: sticky;
-    margin-bottom: .3em;
-}
-.example-one-header .genre {
-    width: 34%;
-    float: left;
-    margin-top: 2.6em;
-    text-align: left;
-}
-.example-one-header nav {
-    width: 66%;
-}
-.nav-item {
-    user-select: none;
-    padding: 1em 1.2em .8em 1.2em;
-    margin-top: 3.1em;
-    color: rgb(167, 167, 167);
-    font-size: .9em;
-}
-.nav-item nav {
-    user-select: none;
-}
-.nav-item:hover {
-    color: blue;
-    cursor: pointer;
-}
-.caractive {
-    color: #fff;
-}
-.genre,
-.nav-item {
-    text-align: left;
-    padding-top: 1.7em;
-    text-transform: uppercase;
-}
-.genre,
-.nav-item,
-.vertical-align-middle {
-    display: inline-block;
-    vertical-align: middle;
-}
-.genre a {
-    font-family: "Arial", sans-serif;
-    border: solid rgb(118, 118, 118) 1px;
-    border-radius: 2px;
-    font-size: .62em;
-    letter-spacing: .7px;
-    color: #e5e5e5;
-    padding: .8em;
-    text-decoration: none;
-    font-weight: 100;
-}
-.genre a:hover {
-    color: #f8254f;
-    border: solid crimson 1px;
-}
-.example-one .genre {
-    margin-top: 2.45em;
-}
-.scroll::-webkit-scrollbar {
-    display: none;
 }
 
 /* Style the tab */
