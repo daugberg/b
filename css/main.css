@@ -428,6 +428,11 @@ header img {
     margin-left: 2em;
     color: black;
 }
+.review img {
+    padding: 0 auto;
+    margin-left: 2em;
+    margin-top: 1em;
+}
 .ig2 {
     height: 86%;
 }
@@ -702,5 +707,18 @@ header img {
     }
     .tabbed label {
         font-size: .9em;
+    }
+    .review {
+        height: auto;
+    }
+    .review p {
+        margin: 1.5em;
+    }
+    .review h5 {
+        margin: 1.5em;
+    }
+    .review img {
+        width: 30%;
+        margin: 1.5em 0 -.6em 1.5em;
     }
 }
