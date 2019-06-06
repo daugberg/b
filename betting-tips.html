@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Free Betting Tips - betscout.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Get free betting tips from a credible source. We've been sharing our best picks since 2009 and we let you share your own tips.">
+    <meta name="author" content="Betscout.com">
+    <meta name="theme-color" content="#323b62" />
+    <link rel="shortcut icon" type="image/png" href="img/nu-favicon.png" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<style>
+    main {
+        height: auto;
+        padding-bottom: 12.5em;
+    }
+    
+    #chart {
+        transform: scale(.95);
+    }
+    
+    #stats {
+        display: flex;
+    }
+    
+    #stats p {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <!-- Mobile Bar -->
+    <input type="checkbox" class="toggle-nav" id="toggle-nav">
+    <div class="mobile-bar">
+        <label for="toggle-nav"></label>
+        <div class="mobimg">
+            <img src="img/betscout-tips.png" alt=""></div>
+    </div>
+    <div class="container">
+        <header>
+            <!-- Header -->
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="betting-tips.html" class="active">Betting tips</a></li>
+                        <li><a href="bookmakers.html">Bookmakers</a></li>
+                        <li><a href="livescore.html">Livescore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header2">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="betting-tips.html" class="actiive">Tips</a></li>
+                        <li><a href="bookmakers.html">Bookmakers</a></li>
+                        <li><a href="livescore.html">Livescore</a></li>
+                        <!--                        <li><a href="videos.html">Videos</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <article class="tips">
+                <section>
+                    <!-- Tab links -->
+                    <div class="tabbed">
+                        <input type="radio" name="tabs" id="tab-nav-1" checked>
+                        <label for="tab-nav-1">Tips</label>
+                        <input type="radio" name="tabs" id="tab-nav-2">
+                        <label for="tab-nav-2">History</label>
+                        <input type="radio" name="tabs" id="tab-nav-3">
+                        <label for="tab-nav-3">Stats</label>
+                        <input type="radio" name="tabs" id="tab-nav-4">
+                        <label for="tab-nav-4">VIP</label>
+                        <div class="tabs">
+                            <div>
+                                <article class="latest">
+                                    <div id="newtips"></div>
+                                </article>
+
+                            </div>
+                            <div>
+                                <article class="latest">
+                                    <div id="tips"></div>
+                                </article>
+                            </div>
+                            <div class="stats">
+                                <div id="statss"></div>
+                                <canvas id="chart"></canvas>
+                            </div>
+                            <div class="stats">
+                                <p>Want free access to our VIP tips? Sign up to CopyTip and get free access to the best tips from Betscout and many other professional tipsters!</p>
+                                <div class="copytip">
+                                    <h5>Betscout on CopyTip</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <div id="sidebarr">
+                <a href="/"><img src="img/betscout-tips.png" alt="logo"></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>
+                    Best bookmakers
+                </p>
+                <nav>
+                    <ul>
+                        <li><a href="https://bit.ly/betscoutlink1">1xBet</a></li>
+                        <li><a href="https://bit.ly/betscoutlink2">Bovada</a></li>
+                        <li><a href="https://bit.ly/betscoutlink3">Bet365</a></li>
+
+                    </ul>
+                </nav>
+                <p>Betting tips</p>
+                <nav>
+                    <ul>
+                        <li><a href="https://bit.ly/betscoutlink4">CopyTip</a></li>
+                        <li><a href="https://bit.ly/betscoutlink5">BettingAdvice</a></li>
+                        <li><a href="https://bit.ly/betscoutlink6">Tipsters Lounge</a></li>
+                    </ul>
+                </nav>
+                <p>Sports statistics</p>
+                <nav>
+                    <ul>
+                        <li><a href="https://bit.ly/betscoutlink7">WhoScored</a></li>
+                        <li><a href="https://bit.ly/betscoutlink8">Opta</a></li>
+                        <li><a href="https://bit.ly/betscoutlink9">BetInf</a></li>
+                        <li><a href="https://bit.ly/betscoutlink10">OddsPortal</a></li>
+                        <li><a href="https://bit.ly/betscoutlink11">BetBrain</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
+        <footer>
+            <p>© Copyright 2019 Betscout</p>
+        </footer>
+    </div>
+</body>
+<script src="js/mainchart.js"></script>
+<script src="js/picks.js"></script>
+<script src="js/newtips.js"></script>
+<script src="js/stats.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+</html>

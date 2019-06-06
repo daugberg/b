@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Football Livescore - betscout.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Need a livescore? We  got you covered with the best Football Livescore on the internet.">
+    <meta name="author" content="Betscout.com">
+    <meta name="theme-color" content="#323b62" />
+    <link rel="shortcut icon" type="image/png" href="img/nu-favicon.png" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="stats.js"></script>
+    <script src="mainchart.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        #myChart {
+            z-index: 222;
+        }
+        
+        #sidebarr p {
+            font-size: .6em;
+            color: rgba(255, 255, 255, 0.37);
+            margin: 16px;
+            text-transform: uppercase;
+            border-bottom: solid rgba(255, 255, 255, 0.27) 1px;
+        }
+        
+        #sidebarr ul {
+            font-size: .8em;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #sidebarr li {
+            color: rgba(255, 255, 255, 0.68);
+            margin-top: -.2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Bar -->
+    <input type="checkbox" class="toggle-nav" id="toggle-nav">
+    <div class="mobile-bar">
+        <label for="toggle-nav"></label>
+        <div class="mobimg">
+            <img src="img/betscout-tips.png" alt=""></div>
+    </div>
+    <div class="container">
+        <header>
+            <!-- Header -->
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="betting-tips.html" class="active">Betting tips</a></li>
+                        <li><a href="bookmakers.html">Bookmakers</a></li>
+                        <li><a href="livescore.html">Livescore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header2">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="betting-tips.html">Tips</a></li>
+                        <li><a href="bookmakers.html">Bookmakers</a></li>
+                        <li><a href="livescore.html" class="actiive">Livescore</a></li>
+                        <!--                        <li><a href="videos.html">Videos</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div style="width:75%;">
+                <canvas id="canvas"></canvas>
+            </div>
+            <!-- ENETPULSE 
+            <script type="text/javascript" src="https://widget.enetscores.com/FW8E4D3B316E7AC621"></script>
+-->
+            <div class="stats">
+                <div id="persons"></div>
+                <canvas id="chart"></canvas>
+            </div>
+
+
+            <div id="sidebarr">
+                <a href="/"><img src="img/betscout-tips.png" alt="logo"></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>
+                    Best bookmakers
+                </p>
+                <nav>
+                    <ul>
+                        <li><a href="https://bit.ly/betscoutlink1">1xBet</a></li>
+                        <li><a href="https://bit.ly/betscoutlink2">Bovada</a></li>
+                        <li><a href="https://bit.ly/betscoutlink3">Bet365</a></li>
+
+                    </ul>
+                </nav>
+                <p>Betting tips</p>
+                <nav>
+                    <ul>
+                        <li><a href="https://bit.ly/betscoutlink4">CopyTip</a></li>
+                        <li><a href="https://bit.ly/betscoutlink5">BettingAdvice</a></li>
+                        <li><a href="https://bit.ly/betscoutlink6">Tipsters Lounge</a></li>
+                    </ul>
+                </nav>
+                <p>Sports statistics</p>
+                <nav>
+                    <ul>
+                        <li><a href="https://bit.ly/betscoutlink7">WhoScored</a></li>
+                        <li><a href="https://bit.ly/betscoutlink8">Opta</a></li>
+                        <li><a href="https://bit.ly/betscoutlink9">BetInf</a></li>
+                        <li><a href="https://bit.ly/betscoutlink10">OddsPortal</a></li>
+                        <li><a href="https://bit.ly/betscoutlink11">BetBrain</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
+        <footer>
+            <p>© Copyright 2019 Betscout</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <!-- main js file -->
+        <script src="mainchart.js"></script>
+        <script src="stats.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+    </div>
+</body>
+
+</html>
