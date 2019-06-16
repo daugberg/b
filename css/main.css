@@ -6,7 +6,7 @@ html {
 body {
     width: 100%;
     margin: 0 auto;
-    background: #d1e2f2;
+    background: rgba(209, 226, 242, 0.67);
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -48,8 +48,7 @@ li {
     text-transform: capitalize;
     letter-spacing: .8px;
 }
-li:hover {
-    cursor: pointer;
+.header2 li:hover {
     transform: scale(1.1);
 }
 li:last-child {
@@ -61,26 +60,21 @@ article section {
     width: 100%;
     height: 100%;
     background: transparent;
-    opacity: .9;
-}
-article section:hover {
-    opacity: 1;
 }
 article section h3 {
     color: #797979;
-    margin-top: 0;
+    margin: auto;
     padding: 0 0 0 1.2em;
     font-size: .5em;
     font-weight: 400;
     letter-spacing: .02em;
 }
 article section h4 {
-    margin: -.85em 0 -.19em .75em;
+    margin: -.4em auto auto .7em;
     font-weight: 500;
     font-size: .8em;
 }
 article section h5 {
-    margin: 0 0 -1.07em .7em;
     font-size: .9em;
 }
 article section p {
@@ -88,10 +82,13 @@ article section p {
     text-decoration: none;
     font-size: 1em;
 }
-button {
+.button {
     font-size: .8em;
     padding: .2em 1em .27em 1.2em;
-    margin: -2% 2% 2% 2%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1em;
     float: right;
     color: white;
     border-radius: 3px;
@@ -100,12 +97,15 @@ button {
 }
 .tips button {
     font-size: .95em;
-    padding: .2em 1em .2em 1.2em;
-    margin: .8% 2% 1.5% 2%;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-.tips h5 {
-    margin: .5em 0 -1.9em .7em;
+h5 {
+    margin-left: .8em;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: 1em;
 }
 button:hover {
@@ -113,20 +113,29 @@ button:hover {
     color: white;
     cursor: pointer;
 }
-.buttongreen {
+.wintext {
+    color: #53B557;
+}
+.losstext {
+    color: rgba(227, 30, 30, 0.72);
+}
+.voidtext {
+    color: rgba(0, 116, 165, 0.41);
+}
+.win {
     background: #53B557;
 }
-.buttongreen:hover {
+.win:hover {
     background: #459d49;
 }
-.buttonred {
+.loss {
     background: rgba(227, 30, 30, 0.72);
 }
-.buttonred:hover {
+.loss:hover {
     background: rgba(227, 30, 30, 0.85);
 }
-.buttongray {
-    background: #178b17;
+.void {
+    background: rgba(0, 116, 165, 0.41);
 }
 footer p {
     top: 0;
@@ -138,36 +147,26 @@ footer p {
 }
 .gameinfo {
     width: 100%;
-    background: #efefef;
+    background: white;
     padding-bottom: .4em;
 }
 .tipinfo {
+    display: flex;
     margin: 0 auto;
-    padding-top: .65em;
-    background: white;
+    background: linear-gradient(to right, #e3e3e3, #d3d3d3);
     width: 100%;
+    padding: .5em 0 .5em 0;
 }
 .bookinfo {
     display: flex;
     margin: 0 auto;
-    padding-top: .5em;
+    padding: .5em 0 .5em 0;
     background: white;
     width: 100%;
+    height: auto;
 }
-.bookinfo button {
-    background: #53B557;
-}
-.ratings {
-    margin-left: 2.9em;
-    margin-top: .5em;
-}
-.ratings:first-of-type {
-    margin-left: 4em;
-}
-.latest {
-    background: transparent;
-    width: 100%;
-    height: 100%;
+.bookinfo h4 {
+    margin-right: auto;
 }
 .latest section {
     width: 100%;
@@ -196,7 +195,7 @@ footer p {
     margin: -1.5em 0 2em 2.7em;
 }
 .fb img {
-    margin-top: 6px;
+    margin-top: 5px;
     margin-left: 6px;
     width: 12%;
 }
@@ -216,30 +215,27 @@ footer p {
     margin: 1em 0 1em 0;
 }
 .insta img {
-    margin-top: 6px;
-    margin-left: 6px;
+    margin-top: .28em;
+    margin-left: .6em;
     width: 7%;
 }
 .insta .p {
     color: #C13584;
     width: 70%;
-    margin: -1.4em 0 2em 2.7em;
+    margin: -1.3em 0 0 2.7em;
 }
 .bookies p {
     font-size: .95em;
-    margin: 0 auto;
     padding-left: 8px;
     text-align: left;
-}
-header {
-    background: #3771a3;
-    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 .header2 {
     display: flex;
     text-align: left;
     text-transform: capitalize;
+    background: #3771a3;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 header img {
     width: 50%;
@@ -306,7 +302,7 @@ header img {
     margin-top: -.2em;
 }
 
-/* The 1 card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The 1 card container */
 
 .flip {
     display: flex;
@@ -318,26 +314,24 @@ header img {
     cursor: pointer;
 }
 .flip2 {
-    margin-top: 1em;
-    height: 40%;
-    background: url(1xbet.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 20%;
+    margin: 0 auto;
 }
 .flip1 {
     display: flex;
     flex-direction: column;
-    height: 60%;
-    background-image: url(davidagf.jpg);
-    background-size: cover;
+    height: 100%;
     color: rgb(255, 255, 255);
 }
 .flip1a {
-    height: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 45%;
+    min-height: 8.3em;
     margin: 0 auto;
 }
 .flip1b {
-    height: 50%;
+    height: 55%;
     font-size: .9em;
     background: white;
     width: 100%;
@@ -408,7 +402,7 @@ header img {
     color: rgba(255, 255, 255, 0.62);
 }
 .stats {
-    background: #eee;
+    background: white;
     color: black;
     padding-top: 1em;
 }
@@ -419,13 +413,13 @@ header img {
 }
 .review {
     height: auto;
-    background: #eee;
+    background: white;
     color: black;
     padding-top: 1em;
 }
 .review p {
     padding: 0 auto;
-    margin-left: 2em;
+    margin: 2em;
     color: black;
 }
 .review img {
@@ -455,15 +449,14 @@ header img {
     margin-right: 5px;
     cursor: pointer;
     transition: background-color .3s;
-    background: rgba(238, 238, 238, 0.33);
+    background: rgba(255, 255, 255, 0.38);
 }
 .tabbed > label:hover,
 .tabbed > input:checked + label {
-    background: #eee;
+    background: #fff;
 }
 .tips {
     width: 86.5%;
-    padding-bottom: 2em;
 }
 .tabr {
     width: 28%;
@@ -499,6 +492,15 @@ header img {
 }
 .header {
     display: none;
+}
+#stats {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+#stats p {
+    margin-right: 2em;
+    font-size: .8em;
 }
 @media screen and (max-width: 700px) {
     .tabbed {
@@ -552,15 +554,18 @@ header img {
     .fb {
         height: 40px;
     }
+    .fb img {
+        margin-top: .5em;
+    }
     .insta {
         height: 40px;
     }
     .insta img {
-        m margin-top: 10px;
+        margin-top: .6em;
         width: 5%;
     }
     .insta .p {
-        margin: -1.34em 0 2em 2.7em;
+        margin: -1.2em 0 2em 2.7em;
     }
     .ig2 {
         height: 94%;
@@ -589,9 +594,11 @@ header img {
         display: block;
         width: 100%;
         height: 62px;
-        background-color: #245988;
+        background-color: #0074A5;
         position: fixed;
         z-index: 2;
+        -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
     }
     .mobile-bar ul {
         display: flex;
@@ -628,7 +635,7 @@ header img {
     .mobile-bar label:after {
         content: "\2630";
         font-size: 2em;
-        color: #fff;
+        color: #53b557;
         line-height: 60px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -654,7 +661,7 @@ header img {
         transform: rotate(180deg);
     }
     .toggle-nav:checked + .mobile-bar label:after {
-        color: #f9bb12;
+        color: #fff;
     }
     /** Container **/
     .container {
@@ -671,8 +678,8 @@ header img {
         left: -70%;
         width: 70%;
         max-width: 470px;
-        height: 100%;
-        background: #0074A5;
+        height: auto;
+        background: transparent;
         padding-top: 4em;
     }
     .header ul {
@@ -683,15 +690,12 @@ header img {
     }
     .header a {
         display: block;
-        padding: 15px;
-        border-bottom: 1px dotted rgba(36, 89, 136, 0.48);
-        color: #fff;
+        padding-left: 15px;
+        /*        border-bottom: 1px dotted rgba(36, 89, 136, 0.48);*/
+        color: rgb(1, 99, 141);
         -webkit-transition: background-color 300ms;
         transition: background-color 300ms;
         text-decoration: none;
-    }
-    .header a:active {
-        background-color: #141e2f;
     }
     #headerz {
         padding: 1.3em;
@@ -701,9 +705,6 @@ header img {
     }
     footer {
         display: none;
-    }
-    .tips h5 {
-        margin: .3em 0 -1.8em .7em;
     }
     .tabbed label {
         font-size: .9em;
@@ -720,5 +721,15 @@ header img {
     .review img {
         width: 30%;
         margin: 1.5em 0 -.6em 1.5em;
+    }
+    #stats {
+        flex-direction: column;
+        margin-bottom: -1em;
+    }
+    #stats p {
+        margin-bottom: -1em;
+    }
+    #chart {
+        margin-top: 1.6em;
     }
 }

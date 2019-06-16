@@ -8,7 +8,7 @@
     <meta name="description" content="Get carefully selected sports betting tips every day of the year. Share your own tips on Instagram using #betscout.">
     <meta name="author" content="Betscout.com">
     <meta name="theme-color" content="#3771a3" />
-    <link rel="shortcut icon" type="image/png" href="img/nu-favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -18,6 +18,24 @@
             width: auto;
             transform: scale(.9);
             min-height: 212px;
+        }
+        
+        #stats {
+            flex-direction: column;
+        }
+        
+        #stats p {
+            margin-bottom: -.91em;
+            font-size: .8em;
+        }
+        
+        .flip1b h5 {
+            margin: 2em;
+        }
+        
+        .flip img {
+            margin-top: 1em;
+            width: 100%;
         }
 
     </style>
@@ -29,7 +47,7 @@
     <div class="mobile-bar">
         <label for="toggle-nav"></label>
         <div class="mobimg">
-            <img src="img/betscout-tips.png" alt=""></div>
+            <img src="img/betscout-tips.png" alt="logo"></div>
     </div>
     <div class="container">
         <header>
@@ -37,8 +55,8 @@
             <div class="header">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="betting-tips.html">Betting tips</a></li>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="tips.html">Betting tips</a></li>
                         <li><a href="bookmakers.html">Bookmakers</a></li>
                         <li><a href="livescore.html">Livescore</a></li>
                         <li><a href="about.html">About</a></li>
@@ -49,8 +67,8 @@
             <div class="header2">
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="actiive">Home</a></li>
-                        <li><a href="betting-tips.html">Tips</a></li>
+                        <li><a href="./" class="actiive">Home</a></li>
+                        <li><a href="tips.html">Tips</a></li>
                         <li><a href="bookmakers.html">Bookmakers</a></li>
                         <li><a href="livescore.html">Livescore</a></li>
                         <!--                        <li><a href="videos.html">Videos</a></li> -->
@@ -61,18 +79,10 @@
 
         <main>
             <div class="flip">
-                <section class="flip1">
-                    <div class="flip1a">
-                        <p>Tip of the Day</p>
-                    </div>
-                    <div class="flip1b">
-                        <h3>Football &bull; Denmark &bull; Superligaen &bull; 21:00 CET</h3>
-                        <h4>AGF Aarhus - Randers FC</h4>
-                        <h5>AGF to win @ 2.20</h5>
-                    </div>
-                </section>
-                <section class="flip2">
-                </section>
+                <div id="potd"></div>
+                <a href="http://refpa.top/L?tag=d_3884m_97c_&site=3884&ad=97" class="flip2">
+                    <img src="css/1xbet.gif" alt="Visit 1xBet">
+                </a>
             </div>
             <article class="tabr">
                 <section>
@@ -91,7 +101,6 @@
                                 <article class="latest">
                                     <div id="newtips"></div>
                                 </article>
-
                             </div>
                             <div>
                                 <article class="latest">
@@ -99,7 +108,7 @@
                                 </article>
                             </div>
                             <div class="stats">
-                                <div id="statss"></div>
+                                <div id="stats"></div>
                                 <canvas id="chart"></canvas>
                             </div>
                             <div class="stats">
@@ -116,13 +125,13 @@
             <article class="bookies">
                 <section class="fb">
                     <div class="img">
-                        <img src="img/fbicon.png" alt="">
+                        <img src="img/fbicon.png" alt="Betscout on Facebook">
                         <div class="p">Follow us on Facebook</div>
                     </div>
                 </section>
                 <section class="insta">
-                    <img src="img/igcon.png" alt="">
-                    <div class="p">Get our live tips on Instagram</div>
+                    <img src="img/igcon.png" alt="Betscout on IG">
+                    <div class="p">#betscout live tips on Instagram</div>
                 </section>
                 <section class="ig2">
                     <div class="elfsight-app-eb94ce81-6d05-4c90-a607-b3a55d7d5a3f"></div>
@@ -168,14 +177,15 @@
             <p>© Copyright 2019 Betscout</p>
         </footer>
     </div>
+    <script src="js/picks5.js"></script>
+    <script src="js/mainchart.js"></script>
+    <script src="js/picks.js"></script>
+    <script src="js/potd.js"></script>
+    <script src="js/newtips.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </body>
-<script src="js/picks5.js"></script>
-<script src="js/mainchart.js"></script>
-<script src="js/picks.js"></script>
-<script src="js/newtips.js"></script>
-<script src="js/stats.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
 
 </html>

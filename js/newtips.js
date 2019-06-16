@@ -1,7 +1,7 @@
 "use strict";
 
 let sheetId3 = "1wjmqDmj_LytiA-Oed7MUX5e7PPG-7ppVOOqsPhkJpLc";
-let sheetNumber3 = 3;
+let sheetNumber3 = 1;
 let sheetUrl3 = "https://spreadsheets.google.com/feeds/list/" + sheetId3 + "/" + sheetNumber3 + "/public/full?alt=json";
 console.log(sheetUrl3);
 
@@ -24,12 +24,22 @@ function appendNewtips(newtips) {
         htmlTemplate += `               
                                         <section>
                                         <div class="gameinfo">
-                                            <h3>${newtip['gsx$venue']['$t']}</h3>
-                                            <h4>${newtip['gsx$game']['$t']}</h4>
+<h3>        ${newtip['gsx$date']['$t']} &#183  
+            ${newtip['gsx$time']['$t']} (CET) &#183
+              ${newtip['gsx$sport']['$t']} &#183 
+                ${newtip['gsx$country']['$t']} &#183 
+                  ${newtip['gsx$tournament']['$t']}
+                  </h3>
+                                            <h4>${newtip['gsx$team1']['$t']} vs
+                                                ${newtip['gsx$team2']['$t']}</h4>
                                         </div>
-                                        <div class="tipinfo">
-                                            <h5>${newtip['gsx$tipr']['$t']}</h5>
-                                            <button class="${newtip['gsx$winloss']['$t']}">${newtip['gsx$odds']['$t']}</button>
+                                         <div class="tipinfo">
+                                            <h5>Tip: ${newtip['gsx$tip']['$t']}</h5>
+                     <a href="http://bit.ly/betscout${newtip['gsx$bookie']['$t']}">
+                       
+<button class="">
+        ${newtip['gsx$odds']['$t']}</button>
+</a>
                                         </div>
                                         </section>
       `;

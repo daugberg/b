@@ -8,7 +8,7 @@
     <meta name="description" content="Need a livescore? We  got you covered with the best Football Livescore on the internet.">
     <meta name="author" content="Betscout.com">
     <meta name="theme-color" content="#3771a3" />
-    <link rel="shortcut icon" type="image/png" href="img/nu-favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -55,7 +55,7 @@
     <div class="mobile-bar">
         <label for="toggle-nav"></label>
         <div class="mobimg">
-            <img src="img/betscout-tips.png" alt=""></div>
+            <img src="img/betscout-tips.png" alt="logo"></div>
     </div>
     <div class="container">
         <header>
@@ -63,8 +63,8 @@
             <div class="header">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="betting-tips.html" class="active">Betting tips</a></li>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="tips.html" class="active">Betting tips</a></li>
                         <li><a href="bookmakers.html">Bookmakers</a></li>
                         <li><a href="livescore.html">Livescore</a></li>
                         <li><a href="about.html">About</a></li>
@@ -75,8 +75,8 @@
             <div class="header2">
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="betting-tips.html">Tips</a></li>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="tips.html">Tips</a></li>
                         <li><a href="bookmakers.html">Bookmakers</a></li>
                         <li><a href="livescore.html" class="actiive">Livescore</a></li>
                         <!--                        <li><a href="videos.html">Videos</a></li> -->
@@ -86,6 +86,8 @@
         </header>
 
         <main>
+            <button onclick="authenticate().then(loadClient)">authorize and load</button>
+            <button onclick="execute()">execute</button>
             <div style="width:75%;">
                 <canvas id="canvas"></canvas>
             </div>
@@ -96,7 +98,6 @@
                 <div id="persons"></div>
                 <canvas id="chart"></canvas>
             </div>
-
 
             <div id="sidebarr">
                 <a href="/"><img src="img/betscout-tips.png" alt="logo"></a>
@@ -144,6 +145,59 @@
         <script src="mainchart.js"></script>
         <script src="stats.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script>
+            /**
+             * Sample JavaScript code for youtube.channels.list
+             * See instructions for running APIs Explorer code samples locally:
+             * https://developers.google.com/explorer-help/guides/code_samples#javascript
+             */
+
+            function authenticate() {
+                return gapi.auth2.getAuthInstance()
+                    .signIn({
+                        scope: "https://www.googleapis.com/auth/youtube.readonly"
+                    })
+                    .then(function() {
+                            console.log("Sign-in successful");
+                        },
+                        function(err) {
+                            console.error("Error signing in", err);
+                        });
+            }
+
+            function loadClient() {
+                gapi.client.setApiKey("YOUR_API_KEY");
+                return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+                    .then(function() {
+                            console.log("GAPI client loaded for API");
+                        },
+                        function(err) {
+                            console.error("Error loading GAPI client for API", err);
+                        });
+            }
+            // Make sure the client is loaded and sign-in is complete before calling this method.
+            function execute() {
+                return gapi.client.youtube.channels.list({
+                        "part": "snippet,contentDetails,statistics",
+                        "forUsername": "GoogleDevelopers"
+                    })
+                    .then(function(response) {
+                            // Handle the results here (response.result has the parsed body).
+                            console.log("Response", response);
+                        },
+                        function(err) {
+                            console.error("Execute error", err);
+                        });
+            }
+            gapi.load("client:auth2", function() {
+                gapi.auth2.init({
+                    client_id: "YOUR_CLIENT_ID"
+                });
+            });
+
+        </script>
+
     </div>
 </body>
 

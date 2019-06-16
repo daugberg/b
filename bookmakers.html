@@ -8,40 +8,50 @@
     <meta name="description" content="Compare online bookmakers with betscout.com. We only list the best bookies in the business. Pick your favorite sportsbook today.">
     <meta name="author" content="Betscout.com">
     <meta name="theme-color" content="#3771a3" />
-    <link rel="shortcut icon" type="image/png" href="img/nu-favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<style>
-    .fa-star {
-        color: #efefef;
-    }
-    
-    .checked {
-        color: #FF9C00;
-    }
-    
-    .gameinfo {
-        display: flex;
-    }
-    
-    .gameinfo h4 {
-        margin-top: .5em;
-        margin-left: 6.5em;
-        font-size: .55em;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: gray;
-        letter-spacing: .21px;
-    }
-    
-    .gameinfo h4:first-child {
-        margin-left: 20em;
+    <style>
+            .buttons {
+            margin: auto 0 auto auto;
+            display: flex;
+        }
+        
+        main {
+            padding-bottom: 3.3em;
+        }
+        
+        .fa-star {
+            color: #efefef;
+        }
+        
+        .checked {
+            color: #FF9C00;
+        }
+        
+        .gameinfo {
+            display: flex;
+        }
+        
+        .hide h4 {
+            font-size: .45em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: gray;
+            letter-spacing: .21px;
+            margin: auto;
+        }
+        
+        .hide {
+            max-height: 1em;
+        }
+        /*    
+    .gameinfo .ratings:first-child {
+        margin-left: 9em;
     }
     
     .gameinfo h4:nth-of-type(3) {
@@ -55,60 +65,114 @@
     .gameinfo h4:nth-of-type(5) {
         margin-left: 9.6em;
     }
-    
-    .tipinfo {
-        margin-bottom: .21em;
-    }
-    
-    span {
-        width: 13%
-    }
-    
-    .latest img {
-        margin: .1em 0 0 .8em;
-        width: 10%;
-        height: 10%;
-    }
-    
-    .latest button {
-        padding-top: .31em;
-    }
-    
-    .latest img:hover,
-    .latest button:hover {
-        transform: scale(1.1);
-    }
-    
-    .punchline p {
-        display: none
-    }
-    
-    @media screen and (max-width: 700px) {
-        .gameinfo h4 {
+  */
+        
+        .tipinfo {
+            margin-bottom: .21em;
+        }
+        
+        span {
+            width: 10%;
+        }
+        
+        .latest a img {
+            margin: auto auto auto 1em;
+            margin-right: 0;
+            width: 40%;
+            height: 100%;
+        }
+        
+        .latest .button {
+            padding: .4em 1em .4em 1em;
+        }
+        
+        .latest img:hover,
+        .latest .button:hover {
+            transform: scale(1.1);
+        }
+        
+        .ratings:first-child {
             display: none;
         }
-        .ratings {
-            display: none;
+        
+        .hide img,
+        .hide .button {
+            visibility: hidden;
         }
-        .punchline p {
-            font-size: .36em;
-            font-style: italic;
-            display: block;
-            color: #3b3b3b;
-            margin: .4em 0 1em 2em;
+        
+        .bookinfo a {
+            width: 20%;
         }
-        .latest img {
-            margin: -.1em 0 0 .8em;
-            width: 26%;
-            height: 10%;
+        
+        .bookinfo a img {
+            width: 70%;
         }
-        .latest button {
-            font-size: .8em;
-            margin-bottom: .8em;
+        
+        .bookinfo .ratings {
+            width: 15%;
+            margin: auto;
         }
-    }
+        
+        .ratings h4 {
+            margin-right: auto;
+        }
+        
+        .buttons {
+            width: 30%;
+        }
+        
+        .buttons a {
+            width: auto;
+        }
+        
+        .hide .ratings {
+            font-size: .7em;
+            margin-left: .5em;
+            color: grey;
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .gameinfo h4 {
+                display: none;
+            }
+            .ratings {
+                display: none;
+            }
+            .latest a img {
+                margin: auto auto auto .5em;
+                width: 100%;
+            }
+            .buttons .button {
+                margin: auto;
+            }
+            .buttons {
+                width: 50%;
+                font-size: 1.3em;
+            }
+            .bookinfo img {
+                width: 50%;
+            }
+            .latest section:first-of-type {
+                display: none;
+            }
+            @media screen and (max-width: 500px) {
+                .gameinfo h4 {
+                    display: none;
+                }
+                .ratings {
+                    display: none;
+                }
+                .latest a img {
+                    margin: auto auto auto .5em;
+                    width: 100%;
+                }
+                .buttons {
+                    font-size: .75em;
+                }
+            }
 
-</style>
+    </style>
+</head>
 
 <body>
     <!-- Mobile Bar -->
@@ -116,7 +180,7 @@
     <div class="mobile-bar">
         <label for="toggle-nav"></label>
         <div class="mobimg">
-            <img src="img/betscout-tips.png" alt=""></div>
+            <img src="img/betscout-tips.png" alt="logo"></div>
     </div>
     <div class="container">
         <header>
@@ -124,7 +188,7 @@
             <div class="header">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./">Home</a></li>
                         <li><a href="betting-tips.html" class="active">Betting tips</a></li>
                         <li><a href="bookmakers.html">Bookmakers</a></li>
                         <li><a href="livescore.html">Livescore</a></li>
@@ -136,7 +200,7 @@
             <div class="header2">
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
+                        <li><a href="./">Home</a></li>
                         <li><a href="betting-tips.html">Tips</a></li>
                         <li><a href="bookmakers.html" class="actiive">Bookmakers</a></li>
                         <li><a href="livescore.html">Livescore</a></li>
@@ -159,46 +223,73 @@
 
                         -->
                         <input type="radio" name="tabs" id="tab-nav-3">
-
                         <label for="tab-nav-3">1xBet</label>
                         <input type="radio" name="tabs" id="tab-nav-4">
                         <label for="tab-nav-4">Bovada</label>
                         <div class="tabs">
                             <div>
-                                <div class="gameinfo">
-                                    <h4>Odds selection</h4>
-                                    <h4>Odds quality</h4>
-                                    <h4>Cash-in</h4>
-                                    <h4>Livescore</h4>
-                                    <h4>Overall</h4>
-                                </div>
-
                                 <article class="latest">
+                                    <!--
+                                        <div class="gameinfo">
+
+                                            <div class="ratings">
+                                                <h4>Odds selection</h4></div>
+                                            <div class="ratings">
+                                                <h4>Odds quality</h4></div>
+                                            <div class="ratings">
+
+                                                <h4>Cash-in</h4></div>
+                                            <div class="ratings">
+
+                                                <h4>Livescore</h4></div>
+                                            <div class="ratings">
+
+                                                <h4>Overall</h4></div>
+                                            <div class="ratings">
+
+                                                <h4>Welcome bonus</h4></div>
+                                        </div>
+
+                                    </section>
+                                    -->
+                                    <!-- Subtitles -->
+                                    <section>
+                                        <div class="bookinfo hide">
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/1xbet_logo_bookmakers.png" alt="1xbet betting review">
+                                            </a>
+                                            <div class="ratings">
+                                                Overall
+                                            </div>
+
+                                            <div class="ratings">
+                                                Odds quality </div>
+
+                                            <div class="ratings">
+                                                Selections </div>
+
+                                            <div class="ratings">
+                                                In-play
+                                            </div>
+
+                                            <div class="ratings">
+                                                Cash-in
+                                            </div>
+                                            <div class="buttons">
+                                                <a href="http://1xbet.dk" class="button">€100 bonus
+                                                </a>
+                                                <a href="#" class="button void">review
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
 
                                     <!-- 1XBET -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/1xbet_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>Huge selection of quality odds</p>
-                                            </div>
-
-                                            <div class="ratings">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked "></span>
-                                            </div>
-
-                                            <div class="ratings">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/1xbet_logo_bookmakers.png" alt="1xbet betting review">
+                                            </a>
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -223,16 +314,35 @@
                                                 <span class="fa fa-star checked"></span>
                                             </div>
 
-                                            <button class="">€100 bonus</button>
+                                            <div class="ratings">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                            </div>
+
+                                            <div class="ratings">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                            </div>
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review
+                                                </a>
+                                                <a href="http://1xbet.dk" class="button">€100 bonus
+                                                </a>
+                                            </div>
                                         </div>
                                     </section>
+
                                     <!-- bet365 -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/bet365_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>The best Cash-In system</p>
-                                            </div>
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/bet365_logo_bookmakers.png" alt="bet365 bettingreview"></a>
 
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
@@ -273,19 +383,21 @@
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
                                             </div>
-
-                                            <button class="">€100 bonus</button>
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review
+                                                </a>
+                                                <a href="http://1xbet.dk" class="button">€100 bonus
+                                                </a>
+                                            </div>
                                         </div>
                                     </section>
 
                                     <!-- UNIBET -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/unibet_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>Slick and competitive bookie</p>
-                                            </div>
-
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/unibet_logo_bookmakers.png" alt="Unibet betting review">
+                                            </a>
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -326,19 +438,20 @@
                                                 <span class="fa fa-star"></span>
                                             </div>
 
-
-                                            <button class="">€100 bonus</button>
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review</a>
+                                                <a href="http://1xbet.dk" class="button">€100 bonus</a>
+                                            </div>
                                         </div>
+
                                     </section>
 
                                     <!-- BETSAFE -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/betsafe_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>Trustworthy with special markets</p>
-                                            </div>
-
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/betsafe_logo_bookmakers.png" alt="Betsafe betting review">
+                                            </a>
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -379,18 +492,22 @@
                                                 <span class="fa fa-star"></span>
                                             </div>
 
-                                            <button class="">€50 bonus</button>
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review
+                                                </a>
+                                                <a href="http://1xbet.dk" class="button">€100 bonus
+                                                </a>
+                                            </div>
+
                                         </div>
                                     </section>
 
                                     <!-- Bovada -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/bovada_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>Best book for US punters</p>
-                                            </div>
-
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/bovada_logo_bookmakers.png" alt="Bovada betting review">
+                                            </a>
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -430,19 +547,22 @@
                                                 <span class="fa fa-star"></span>
                                             </div>
 
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review
+                                                </a>
+                                                <a href="http://1xbet.dk" class="button">$200 bonus
+                                                </a>
+                                            </div>
 
-                                            <button class="">$200 bonus</button>
                                         </div>
                                     </section>
 
                                     <!-- NORDICBET -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/nordicbet_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>Deepest coverage of Scandinavia</p>
-                                            </div>
-
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/nordicbet_logo_bookmakers.png" alt="Nordicbet betting review">
+                                            </a>
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -483,18 +603,21 @@
                                                 <span class="fa fa-star"></span>
                                             </div>
 
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review
+                                                </a>
+                                                <a href="http://1xbet.dk" class="button">€100 bonus
+                                                </a>
+                                            </div>
 
-                                            <button class="">€50 bonus</button>
                                         </div>
                                     </section>
                                     <!-- BETSSON -->
                                     <section>
                                         <div class="bookinfo">
-                                            <img src="img/betsson_logo_bookmakers.png" alt="">
-                                            <div class="punchline">
-                                                <p>Mediocre veteran in the game</p>
-                                            </div>
-
+                                            <a href="http://1xbet.dk">
+                                                <img src="img/betsson_logo_bookmakers.png" alt="Betsson betting review">
+                                            </a>
                                             <div class="ratings">
                                                 <span class="fa fa-star checked"></span>
                                                 <span class="fa fa-star checked"></span>
@@ -535,8 +658,13 @@
                                                 <span class="fa fa-star"></span>
                                             </div>
 
+                                            <div class="buttons">
+                                                <a href="#" class="button void">review
+                                                </a>
+                                                <a href="http://1xbet.dk" class="button">€100 bonus
+                                                </a>
+                                            </div>
 
-                                            <button class="">€20 bonus</button>
                                         </div>
                                     </section>
                                 </article>
@@ -546,7 +674,7 @@
                                 </article>
                             </div>
                             <div class="review">
-                                <img src="img/1xbet.png" alt="">
+                                <img src="img/1xbet.png" alt="1xBet betting bonus">
 
                                 <p>This is a very interesting betting company that excites it's players with great odds, amazing coverage and numerous other sports betting features. 1XBET is the biggest Russian bookmaker with over 1000 betting shops spread across Russia. They were founded in 2007 and are registered in Cyprus. In last couple of years they started strong international expansion and now have around 500 000 registered online users. In 1XBET review bellow you will see why they generate such success.</p>
                                 <div class="copytip">
@@ -554,9 +682,9 @@
                                 </div>
                             </div>
                             <div class="review">
-                                <img src="img/bovada.png" alt="">
+                                <img src="img/bovada.png" alt="Bovada betting bonus">
 
-                                <p>One of the tricky things about online gambling is navigating the sea of online gambling sites. The ocean is full of them. Some are friendly schools of fish and dolphins. Others …are sharks. But unlike actual dolphins and sharks, it’s hard to tell which sites are friendlies and which want to seek their teeth into you. This couldn’t be truer for American online gamblers. US gamblers have to play at offshore sites. Most are licensed and regulated, sure, but not by the US government. There’s little realistic or reasonable recourse if and when you’re ripped off. These waters are far murkier to swim in than international waters. Which is why you should join a legit and trustworthy site. Nothing else matters; not the games, not the promotions or banking options; nothing matters if you’re splashing around in shark infested waters. Which is why we recommend Bovada.</p>
+                                <p>One of the tricky things about online gambling is navigating the sea of online gambling sites. The ocean is full of them. Some are friendly schools of fish and dolphins. Others ... are sharks. But unlike actual dolphins and sharks, it’s hard to tell which sites are friendlies and which want to seek their teeth into you. This couldn’t be truer for American online gamblers. US gamblers have to play at offshore sites. Most are licensed and regulated, sure, but not by the US government. There’s little realistic or reasonable recourse if and when you’re ripped off. These waters are far murkier to swim in than international waters. Which is why you should join a legit and trustworthy site. Nothing else matters; not the games, not the promotions or banking options; nothing matters if you’re splashing around in shark infested waters. Which is why we recommend Bovada.</p>
                                 <div class="copytip">
                                     <h5>Visit Bovada and get your $200 welcome bonus</h5>
                                 </div>
@@ -588,7 +716,7 @@
                     <ul>
                         <li><a href="https://bit.ly/betscoutlink4">CopyTip</a></li>
                         <li><a href="https://bit.ly/betscoutlink5">BettingAdvice</a></li>
-                        <li><a href="https://bit.ly/betscoutlink6">Tipsters Lounge</a></li>
+                        <li><a href="https://bit.ly/betscoutlink6">TipLounge</a></li>
                     </ul>
                 </nav>
                 <p>Sports statistics</p>

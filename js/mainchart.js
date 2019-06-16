@@ -23,7 +23,7 @@ function appendChart(data) {
     let colors = [];
 
     for (let grade of data) {
-        grades.push(grade['gsx$navn']['$t']);
+        grades.push(grade['gsx$date']['$t']);
         numbers.push(grade['gsx$pris']['$t']);
         colors.push(grade['gsx$color']['$t']);
     }
